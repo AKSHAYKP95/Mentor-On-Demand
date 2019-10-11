@@ -1,0 +1,305 @@
+
+ <!DOCTYPE html>
+
+ <html lang="en">
+ 
+ <head>
+     <meta charset="utf-8" />
+     <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+     <title>Klife</title>
+     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+     <!--     Fonts and icons     -->
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+     <!-- CSS Files -->
+     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+     <link href="/assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+     <!-- CSS Just for demo purpose, don't include it in your project -->
+     <link href="/assets/css/demo.css" rel="stylesheet" />
+     <style>
+         input{
+            color: black;
+            font-weight: bold;
+         }
+         .form-control {
+             color: black;
+            font-weight: bold;
+         }
+         .form-group {
+    margin-bottom: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+     </style>
+ </head>
+ 
+ <body>
+     <div class="wrapper">
+         <div class="sidebar">
+            
+             <div class="sidebar-wrapper" style="background-image: url(/assets/img/sidebar-5.jpg);">
+                 <div class="logo">
+                     <a routerLink="" class="simple-text">
+                         Klife
+                     </a>
+                 </div>
+                 <ul class="nav">
+                     <li class="nav-item active">
+                         <a class="nav-link" routerLink="/userdashboard">
+                             <i class="nc-icon nc-chart-pie-35"></i>
+                             <p>Dashboard</p>
+                         </a>
+                     </li>
+                     <li>
+                         <a class="nav-link" routerLink="/userprofile">
+                             <i class="nc-icon nc-circle-09"></i>
+                             <p>User Profile</p>
+                         </a>
+                     </li>
+                     <li>
+                         <a class="nav-link" routerLink="/skills">
+                             <i class="nc-icon nc-notes"></i>
+                             <p>Skills List</p>
+                         </a>
+                     </li>
+                     <li>
+                         <a class="nav-link" routerLink="/payments">
+                             <i class="nc-icon nc-paper-2"></i>
+                             <p>Payment History</p>
+                         </a>
+                     </li>
+                     <li>
+                         <a class="nav-link" routerLink="/technologys">
+                             <i class="nc-icon nc-atom"></i>
+                             <p>Technology</p>
+                         </a>
+                     </li>
+                     
+                     
+                 </ul>
+             </div>
+         </div>
+         <div class="main-panel">
+             <!-- Navbar -->
+             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                 <div class="container-fluid">
+                     <a class="navbar-brand" href="#pablo"> Dashboard </a>
+                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-bar burger-lines"></span>
+                         <span class="navbar-toggler-bar burger-lines"></span>
+                         <span class="navbar-toggler-bar burger-lines"></span>
+                     </button>
+                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                         <ul class="nav navbar-nav mr-auto">
+                             <li class="nav-item">
+                                 <a routerLink="#" class="nav-link" data-toggle="dropdown">
+                                     <span class="d-lg-none">Dashboard</span>
+                                 </a>
+                             </li>
+                             
+                            
+                         </ul>
+                         <ul class="navbar-nav ml-auto">
+                             <li class="nav-item">
+                                 <a class="nav-link" routerLink="/userprofile/">
+                                     <span class="no-icon">Account</span>
+                                 </a>
+                             </li>
+                             
+                             <li class="nav-item">
+                                 <a class="nav-link" routerLink="/signin">
+                                     <span class="no-icon">Log out</span>
+                                 </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </nav>
+             <!-- End Navbar -->
+
+        <div class="content" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Edit Profile</h4>
+                            </div>
+                            <div class="content">
+                                <form >
+                                    
+                                    <div class="row">
+                                         <div class="col-md-2">
+                                           
+                                            <div class="form-group">
+                                                <label>Id</label>
+                                                <input type="text" class="form-control" placeholder="id" id="id">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3">
+                                           
+                                            <div class="form-group">
+                                                <label>Username</label>
+                                                <input type="text" class="form-control" placeholder="Username" id="userName">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" placeholder="Email" id="email">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>Mobile No</label>
+                                                <input type="text" class="form-control" placeholder="Company" id="contactNumber">
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                
+                                                <label>First Name</label>
+                                                <input type="text" class="form-control" placeholder="Company" id="firstName">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last Name" id="lastName">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>LinkedIn Url</label>
+                                                <input type="text" class="form-control" placeholder="Home Address" id="linkedinUrl">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>City</label>
+                                                <input type="text" class="form-control" placeholder="City" value="Pune" id="city">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Country</label>
+                                                <input type="text" class="form-control" placeholder="Country" value="India" id="country">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Postal Code</label>
+                                                <input type="number" class="form-control" placeholder="ZIP Code" value="411001" id="postalCode">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>About Me</label>
+                                                <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike" id="textAr">Hello this is Vilas here wana learn something. I am here to train you in Java Full Stack Developer.</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                    <button type="submit" (click)="updateMentorTest()" class="btn btn-info btn-fill pull-right" >Update Profile</button>
+                                    <div class="clearfix"></div>
+                                  
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..."/>
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                     <a href="#">
+                                    <img class="avatar border-gray" src="/assets/akshay.png" alt="..."/>
+
+                                      <h4 id="fname" class="title"><br />
+                                    </h4>
+                                    <h6 id="userName1">123</h6>     
+                                    </a>
+                                </div>
+                                <p class="description text-center"> "At the Cognizant Training <br>
+                                                     Hardworking <br>
+                                                   Success Aspirant so be focus.. "
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+                 <div class="container-fluid">
+                     <nav>
+                         <ul class="footer-menu">
+                             <li>
+                                 <a href="/klife">
+                                     Home
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="/abotus">
+                                     About Us
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="/contactus">
+                                     Contact Us
+                                 </a>
+                             </li>
+                             
+                         </ul>
+                         <p class="copyright text-center">
+                             ©
+                             <script>
+                                 document.write(new Date().getFullYear())
+                             </script>
+                             <a href="/klife">Klife</a>, made with love for a better web
+                         </p>
+                     </nav>
+                 </div>
+             </footer>
+         </div>
+     </div>
+     
+ </body>
+ </html>
+ 
+
+
+
+
+
+ 
